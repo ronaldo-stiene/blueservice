@@ -1,0 +1,133 @@
+/**
+ * Arquivo que contém as definições de estilo para a página do carrinho.
+ *
+ * Modifica os seguintes itens:
+ * - Página do carrinho
+ * - Itens do carrinho
+ */
+
+/*********************************************************************************************************************/
+/**                                                      CART                                                       **/
+/*********************************************************************************************************************/
+
+/**
+ * Estilo dos itens do carrinho.
+ * - <table>
+ */
+.cart-list {
+	/* Espaçamento */
+	margin: 1em;
+	border: 1px solid rgba(0, 0, 255, 0.2);
+}
+
+/**
+ * Estilo da descrição de cada coluna.
+ * - <th>
+ */
+.cart-description {
+	/* Espaçamento */
+	padding: .75em;
+}
+
+/**
+ * Estilo de cada item.
+ * - <tr>
+ * - <td>
+ */
+.cart-item {
+	/* Fundo */
+	background-image: linear-gradient(to left, #00F, transparent 50%, transparent);
+}
+.cart-image {
+	/* Tamanho */
+	width: 4em;
+
+	/* Espaçamento */
+	padding: .5em;
+}
+.cart-image img {
+	/* Tamanho */
+    width: 4em;
+    height: auto;
+}
+.cart-name {
+	/* Espaçamento */
+	padding: .5em;
+
+	/* Texto */
+    font-size: 2em;
+    font-weight: bold;
+	vertical-align: middle;
+}
+.cart-quantity {
+	/* Tamanho */
+	width: 6em;
+
+	/* Texto */
+	color: #FFF;
+	font-size: 1.5em;
+	font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.cart-price {
+	/* Tamanho */
+	width: 6em;
+
+	/* Texto */
+	color: #FFF;
+	font-size: 1.5em;
+	font-weight: bold;
+    text-align: center;
+	vertical-align: middle;
+}
+.cart-delete {
+	/* Tamanho */
+	width: 2em;
+
+	/* Texto */
+    vertical-align: middle;
+}
+.cart-delete-img {
+	/* Tamanho */
+	width: 2em;
+	height: 2em;
+
+	/* Espaçamento */
+	margin: auto;
+
+	/* Fundo */
+	background-image: url(/assets/img/delete.png);
+	background-repeat: no-repeat;
+	background-size: 2em;
+}
+.cart-empty {
+	/* Espaçamento */
+	padding: 1em;
+
+	/* Fundo */
+	background-color: rgba(0, 0, 255, 0.2);
+
+	/* Texto */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/**
+ * Estilo do botão.
+ * - <button>
+ */
+.cart-buttom {
+	/* Tamanho */
+	width: 30em;
+
+	/* Espaçamento */
+	margin: auto;
+	margin-top: 1em;
+	padding: .5em;
+}
+.cart-buttom:hover {
+	/* Exibição */
+    cursor: pointer;
+}

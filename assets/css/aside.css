@@ -1,0 +1,80 @@
+/**
+ * Arquivo que contém as definições de estilo para os menus laterais.
+ *
+ * Modifica os seguintes itens:
+ * - Menu lateral de categorias
+ * - Menu lateral de usuário
+ */
+
+/*********************************************************************************************************************/
+/**                                                      ASIDE                                                      **/
+/*********************************************************************************************************************/
+
+/**
+ * Estilo do menu lateral.
+ * - <aside>
+ */
+.side-menu {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+	float: left;
+
+	/* Tamanho */
+	width: 15%;
+
+	/* Espaçamento */
+	margin: 1em;
+	padding: 1em;
+	box-sizing: border-box;
+
+	/* Texto */
+	text-align: center;
+}
+
+/**
+ * Estilo do título do menu lateral.
+ * - <h4>
+ */
+.side-menu-title {
+	/* Espaçamento */
+	margin-bottom: .5em;
+	padding: .5em;
+
+	/* Fundo */
+	background: linear-gradient(to left, transparent, transparent 20%, #00F 40%, #00F 60%, transparent 80%, transparent);
+	background-repeat: no-repeat;
+	background-size: 100% 1px;
+	background-position: bottom;
+
+	/* Texto */
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+/**
+ * Estilo dos itens do menu lateral.
+ * - <li>
+ */
+.side-menu-itens {
+	/* Espaçamento */
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding: .25em;
+	border-left: 2px solid #00F;
+	border-right: 2px solid #00F;
+	border-radius: 10px;
+}
+.side-menu-item {
+	/* Espaçamento */
+	padding: .75em;
+}
+.side-menu-item:hover,
+.side-menu-item:focus {
+	/* Fundo */
+	background-image: linear-gradient(to left, transparent, #00F 20%, #00F 80%, transparent);
+
+	/* Texto */
+	font-weight: bold;
+    color: #FFF;
+}

@@ -1,0 +1,44 @@
+/**
+ * Arquivo que contém as definições de estilo da página de alteração de senha.
+ *
+ * Modifica os seguintes itens:
+ * - Formulário de alteração de senha
+ */
+
+/*********************************************************************************************************************/
+/**                                                       PASS                                                      **/
+/*********************************************************************************************************************/
+
+/**
+ * Estilo do formulário de senha.
+ * - <form>
+ */
+.pass-form {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/* Espaçamento */
+	margin: 1em;
+}
+
+/**
+ * Estilo do conteúdo do formulário.
+ * - <input>
+ * - <button>
+ */
+.pass-input {
+	/* Tamanho */
+	width: 20em;
+
+	/* Espaçamento */
+	margin: 1em;
+}
+.pass-button {
+	/* Tamanho */
+	width: 20em;
+
+	/* Espaçamento */
+	margin: 1em;
+}

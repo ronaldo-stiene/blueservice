@@ -1,0 +1,165 @@
+/**
+ * Arquivo que contém as definições de estilo para a caixa de login.
+ *
+ * Modifica os seguintes itens:
+ * - Login de usuário
+ * - Criação de usuário
+ */
+
+/*********************************************************************************************************************/
+/**                                                      LOGIN                                                      **/
+/*********************************************************************************************************************/
+
+/**
+ * Caixa de login.
+ * - <section>
+ */
+.login {
+	/* Disposição */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* Posição */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	/* Tamanho */
+	width: 100%;
+	height: 100%;
+
+	/* Transição */
+	transition: .5s;
+
+	/* Exibição */
+	visibility: hidden;
+	opacity: 0;
+}
+
+/**
+ * Tela de fundo.
+ * - <div>
+ */
+.login-fade {
+	/* Tamanho */
+	width: 100%;
+	height: 100%;
+
+	/* Fundo */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Conteúdo da caixa.
+ * - <div>
+ */
+.login-box {
+	/* Disposição */
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	justify-content: space-around;
+
+	/* Tamanho */
+	width: 20em;
+	height: 15em;
+
+	/* Espaçamento */
+	padding: .5em;
+	border: 2px solid #BBB;
+	border-radius: 7px;
+
+	/* Exibição */
+	box-shadow: 5px 5px 5px black;
+
+	/* Fundo */
+	background-color: #FFF;
+
+}
+.create-user-box {
+	/* Disposição */
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+
+	/* Posição */
+	position: fixed;
+
+	/* Tamanho */
+	width: 25em;
+	height: 20em;
+
+	/* Espaçamento */
+	padding: .5em;
+	border: 2px solid #BBB;
+	border-radius: 7px;
+
+	/* Exibição */
+	box-shadow: 5px 5px 5px black;
+
+	/* Fundo */
+	background-color: #FFF;
+}
+.login-title, .create-user-title {
+	/* Espaçamento */
+	margin: .5em;
+	padding: .5em;
+
+	/* Texto */
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+.login-form, .create-user-form {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	/* Espaçamento */
+	margin: .5em;
+	margin-top: 0;
+	padding: .5em;
+	border-left: 1px solid #00F;
+	border-right: 1px solid #00F;
+	border-radius: 10px;
+}
+.login-input, .create-user-input {
+	/* Espaçamento */
+	margin: .5em;
+}
+.login-button, .create-user-button {
+	/* Tamanho */
+	width: 15em;
+
+	/* Espaçamento */
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+.login-create-link, .login-link {
+	/* Espaçamento */
+	margin: .5em;
+	padding: .5em;
+
+	/* Exibição */
+	opacity: .5;
+
+	/* Texto */
+	font-size: .8em;
+	text-align: center;
+}
+.login-create-link:hover,
+.login-link:hover {
+	/* Exibição */
+	opacity: 1;
+	cursor: pointer;
+
+	/* Fundo */
+	background-image: linear-gradient(to left, transparent, transparent 10%, #00F 30%, #00F 70%, transparent 90%, transparent);
+
+	/* Texto */
+	color: white;
+	font-weight: bold;
+}

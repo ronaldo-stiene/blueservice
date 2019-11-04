@@ -1,0 +1,171 @@
+/**
+ * Arquivo que contém as definições de estilo da página do usuário.
+ *
+ * Modifica os seguintes itens:
+ * - Exibição dos dados
+ */
+
+/*********************************************************************************************************************/
+/**                                                       USER                                                      **/
+/*********************************************************************************************************************/
+
+/**
+ * Estilo da página.
+ * - <main>
+ */
+.user {
+	/* Espaçamento */
+	border-left: 1px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-radius: 10px;
+}
+
+/**
+* Estilo do formulário.
+* - <form>
+* - <fieldset>
+* - <div>
+*/
+.user-form {
+	/* Disposição */
+    display: flex;
+    flex-direction: column;
+}
+.user-data {
+	/* Disposição */
+	display: flex;
+	/* Espaçamento */
+	margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border: 1px solid #BBB;
+    border-top: 0;
+    border-radius: 10px;
+}
+.user-data .user-info-section {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+
+	/* Espaçamento */
+    padding-right: 25em;
+}
+.user-adress {
+	/* Disposição */
+	display: flex;
+
+	/* Espaçamento */
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border: 1px solid #BBB;
+    border-top: 0;
+    border-radius: 10px;
+}
+.user-adress .user-info-section {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+}
+
+/**
+ * Estilo do conteúdo.
+ * - <legend>
+ * - <input>
+ * - <label>
+ */
+.user-form legend {
+	/* Espaçamento */
+	margin-bottom: 1em;
+    margin-left: 2em;
+	padding: .5em;
+    border-bottom: 1px solid #BBB;
+    border-radius: 0 0 0 10px;
+}
+.user-info {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	/* Tamanho */
+	width: 30%;
+
+	/* Espaçamento */
+	margin: .5em;
+	box-sizing: border-box;
+}
+.user-info-name {
+	/* Disposição */
+	align-self: center;
+
+	/* Tamanho */
+	width: auto;
+
+	/* Espaçamento */
+	margin-right: 1em;
+
+	/* Texto */
+	text-align: right;
+}
+.user-input {
+	/* Tamanho */
+    width: 100%;
+}
+.change-pass-link {
+	/* Tamanho */
+	width: 100%;
+
+	/* Espaçamento */
+	margin-left: 3.5em;
+	padding-top: .15em;
+	padding-bottom: .15em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	/* Texto */
+	vertical-align: sub;
+}
+#user-name, #user-last-name, #user-email, #user-pass {
+	/* Disposição */
+	flex-grow: 1;
+
+	/* Tamanho */
+    width: 40%;
+}
+#user-street, #user-complement, #user-neighborhood, #user-city {
+	/* Disposição */
+	flex-grow: 2;
+}
+#user-state {
+	/* Tamanho */
+    width: 9em;
+}
+#user-zip {
+	/* Tamanho */
+    width: 20%;
+}
+#user-state-input {
+	/* Tamanho */
+    width: 30%;
+}
+
+/**
+ * Estilo do botão do formulário.
+ * - <button>
+ */
+.user-form-button {
+	/* Tamanho */
+	width: 20em;
+
+	/* Espaçamento */
+	margin: auto;
+	margin-top: 1em;
+
+	/* Texto */
+    font-size: 1.5em;
+}

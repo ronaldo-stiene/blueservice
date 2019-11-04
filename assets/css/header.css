@@ -1,0 +1,277 @@
+/**
+ * Arquivo que contém as definições de estilo para o cabeçalho.
+ *
+ * Modifica os seguintes itens:
+ * - Título principal
+ * - Icones de busca, carrinho e usuário.
+ * - Menu e submenus
+ */
+
+/*********************************************************************************************************************/
+/**                                                      HEADER                                                     **/
+/*********************************************************************************************************************/
+
+/***********************************************/
+/*                  Cabeçalho                  */
+/***********************************************/
+
+/**
+ * Estilo do menu.
+ * - <header>
+ */
+.menu {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+}
+
+/***********************************************/
+/*                    Título                   */
+/***********************************************/
+
+/**
+ * Estilo do título principal
+ * - <section>
+ * - <h1>
+ */
+.menu-main {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+
+	/* Espaçamento */
+	padding: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	/* Fundo */
+	background-image: linear-gradient(to bottom, #00F, #00F 30%, transparent);
+}
+.menu-title {
+	/* Disposição */
+	align-self: center;
+	flex: 2;
+
+	/* Espaçamento */
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+	padding-left: 1.25em;
+
+	/* Fundo */
+	background-image: url(/assets/img/icon.png);
+	background-repeat: no-repeat;
+	background-size: 1em;
+
+	/* Texto */
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/**
+ * Estilo dos icones.
+ * - <div>
+ */
+.menu-search {
+	/* Espaçamento */
+	margin: .5em;
+}
+.menu-search-icon {
+	/* Tamanho */
+	width: 2em;
+	height: 2em;
+
+	/* Espaçamento */
+	margin: .2em;
+
+	/* Fundo */
+	background-image: url(../img/search.png);
+	background-size: 2em;
+	background-repeat: no-repeat;
+}
+.menu-cart {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+
+	/* Espaçamento */
+	margin: .5em;
+}
+.menu-cart-icon {
+	/* Tamanho */
+	width: 2em;
+	height: 2em;
+
+	/* Espaçamento */
+	margin: .2em;
+	margin-right: .2em;
+
+	/* Fundo */
+	background-image: url(../img/cart.png);
+	background-size: 2em;
+	background-repeat: no-repeat;
+
+	/* Texto */
+    text-align: center;
+}
+.menu-cart-quantity {
+	/* Espaçamento */
+	padding-left: .5em;
+
+	/* Texto */
+	font-size: .8em;
+	font-weight: bold;
+    font-family: cursive;
+}
+.menu-user {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/* Espaçamento */
+	margin: .5em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.menu-user-icon {
+	/* Tamanho */
+	width: 2em;
+	height: 2em;
+
+	/* Espaçamento */
+	margin: .2em;
+
+	/* Fundo */
+	background-image: url(../img/user.png);
+	background-size: 2em;
+	background-repeat: no-repeat;
+}
+.menu-user-name {
+	/* Espaçamento */
+	margin: .2em;
+}
+.menu-user-log {
+	/* Texto */
+    font-size: .8em;
+    color: #555;
+}
+.menu-user-icon:hover,
+.menu-user-icon:focus {
+	/* Exibição */
+	cursor: pointer;
+}
+.menu-user-log:hover,
+.menu-user-log:focus {
+	/* Exibição */
+	cursor: pointer;
+	/* Texto */
+    color: black;
+}
+
+/***********************************************/
+/*                     Menu                    */
+/***********************************************/
+
+/**
+ * Estilo do menu.
+ * - <nav>
+ */
+.menu-options {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+
+	/* Espaçamento */
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 1em;
+	border-top: 2px solid #00F;
+	border-bottom: 2px solid #00F ;
+	border-radius: 10px;
+}
+
+/**
+ * Estilo do submenu.
+ * - <div>
+ */
+#submenu-categories {
+	/* Exibição */
+	visibility: hidden;
+}
+#submenu-categories:hover {
+	/* Exibição */
+	visibility: visible;
+}
+
+/**
+ * Estilo dos itens.
+ * - <div>
+ * - <li>
+ */
+.menu-itens,
+.menu-submenu-itens {
+	/* Tamanho */
+	width: 10em;
+}
+.menu-submenu-itens {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+
+	/* Posição */
+	position: absolute;
+
+	/* Espaçamento */
+	border-left: 2px solid #00F;
+	border-right: 2px solid #00F;
+	border-radius: 10px;
+
+	/* Fundo */
+	background-color: #FFF;
+}
+.menu-item,
+.menu-submenu-item {
+	/* Espaçamento */
+	margin-left: .5em;
+	margin-right: .5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+
+	/* Texto */
+	text-align: center;
+}
+.menu-item {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+}
+.menu-item:hover,
+.menu-item:focus {
+	/* Exibição */
+	cursor: pointer;
+
+	/* Fundo */
+	background-image: linear-gradient(to left, transparent, #00F 20%, #00F 80%, transparent);
+
+	/* Texto */
+    color: #FFF;
+	font-weight: bold;
+}
+.menu-item:hover a {
+	/* Texto */
+    color: #FFF;
+}
+.menu-submenu-item:hover,
+.menu-submenu-item:focus {
+	/* Exibição */
+	cursor: pointer;
+
+	/* Fundo */
+	background-image: linear-gradient(to left, transparent, #00F 20%, #00F 80%, transparent);
+
+	/* Texto */
+    color: #FFF;
+	font-weight: bold;
+}

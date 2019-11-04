@@ -1,0 +1,82 @@
+/**
+ * Arquivo que contém as definições de estilo da página de exibição dos pedidos.
+ *
+ * Modifica os seguintes itens:
+ * - Exibição dos pedidos.
+ */
+
+/*********************************************************************************************************************/
+/**                                                     REQUEST                                                     **/
+/*********************************************************************************************************************/
+
+/**
+ * Estilo dos itens do pedido.
+ * - <table>
+ */
+.requests-list {
+	/* Espaçamento */
+	margin: 1em;
+	border: 1px solid rgba(0, 0, 255, 0.2);
+}
+
+/**
+ * Estilo da descrição de cada coluna.
+ * - <th>
+ */
+.request-description {
+	/* Espaçamento */
+	padding: .75em;
+}
+
+/**
+ * Estilo de cada item.
+ * - <tr>
+ * - <td>
+ */
+.request-item {
+	/* Fundo */
+	background-image: linear-gradient(to left, #00F, transparent 50%, transparent);
+}
+.request-image {
+	/* Tamanho */
+	width: 4em;
+
+	/* Espaçamento */
+	padding: .5em;
+}
+.request-image img {
+	/* Tamanho */
+	width: 4em;
+	height: auto;
+}
+.request-name {
+	/* Espaçamento */
+	padding: .5em;
+
+	/* Texto */
+    font-size: 2em;
+    font-weight: bold;
+	vertical-align: middle;
+}
+.request-quantity {
+	/* Tamanho */
+	width: 6em;
+
+	/* Texto */
+	color: #FFF;
+    font-size: 1.5em;
+    font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.request-price {
+	/* Tamanho */
+	width: 6em;
+
+	/* Texto */
+	color: #FFF;
+    font-size: 1.5em;
+    font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}

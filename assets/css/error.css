@@ -1,0 +1,118 @@
+/**
+ * Arquivo que contém as definições de estilo para a caixa de erro.
+ *
+ * Modifica os seguintes itens:
+ * - Caixa de erro
+ */
+
+/*********************************************************************************************************************/
+/**                                                      ERROR                                                      **/
+/*********************************************************************************************************************/
+
+/**
+ * Modifica a exibição do erro.
+ * - <section>
+ */
+.error {
+	/* Disposição */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* Posição */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	/* Tamanho */
+	width: 100%;
+	height: 100%;
+
+	/* Transição */
+	transition: .2s;
+
+	/* Exibição */
+	visibility: hidden;
+	opacity: 0;
+}
+
+/**
+ * Modifica o fundo do erro.
+ * - <div>
+ */
+.error-fade {
+	/* Tamanho */
+	width: 100%;
+	height: 100%;
+
+	/* Fundo */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Modifica a caixa do erro.
+ * - <div>
+ */
+.error-box {
+	/* Disposição */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	/* Posição */
+	position: fixed;
+
+	/* Tamanho */
+	width: 20em;
+	height: auto;
+
+	/* Espaçamento */
+	padding: .5em;
+	border: 2px solid #BBB;
+	border-radius: 7px;
+
+	/* Transformação */
+	transform: scale(0);
+
+	/* Transição */
+	transition: .2s;
+
+	/* Exibição */
+	box-shadow: 5px 5px 5px black;
+
+	/* Fundo */
+	background-color: #FFF;
+}
+
+/**
+ * Modifica o conteúdo da caixa do erro.
+ * - <h3>
+ * - <span>
+ */
+.error-title {
+	/* Espaçamento */
+	margin: .5em;
+	padding: .5em;
+
+	/* Fundo */
+	background: linear-gradient(to left, transparent, #F00 40%, #F00 60%, transparent);
+	background-repeat: no-repeat;
+	background-size: 100% 1px;
+	background-position: bottom;
+
+	/* Texto */
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+.error-data {
+	/* Espaçamento */
+	margin: 2em;
+	padding: .5em;
+	border-left: 1px solid rgba(255, 0, 0, 0.5);
+	border-right: 1px solid rgba(255, 0, 0, 0.5);
+	border-radius: 10px;
+
+	/* Texto */
+    text-align: center;
+}

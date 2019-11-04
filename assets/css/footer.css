@@ -1,0 +1,64 @@
+/**
+ * Arquivo que contém as definições de estilo para o rodapé.
+ *
+ * Modifica os seguintes itens:
+ * - Rodapé
+ */
+
+/*********************************************************************************************************************/
+/**                                                      FOOTER                                                     **/
+/*********************************************************************************************************************/
+
+/**
+ * Modifica o rodapé.
+ * - <footer>
+ */
+.copyright {
+	/* Posição */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	/* Espaçamento */
+	width: 100%;
+	padding: .75em;
+
+	/* Transição */
+	transition: opacity .5s;
+
+	/* Exibição */
+	opacity: .1;
+
+	/* Fundo */
+	background-color: #000;
+
+	/* Texto */
+	color: #FFF;
+}
+.copyright:hover {
+	/* Exibição */
+	opacity: 1;
+}
+
+/**
+ * Modifica o conteúdo do rodape.
+ * - <span>
+ */
+.copyright strong {
+	/* Texto */
+	font-weight: bold;
+}
+.copyright em {
+	/* Transição */
+	transition: .5s;
+
+	/* Exibição */
+	opacity: 0;
+
+	/* Texto */
+	font-style: italic;
+}
+.copyright:hover em {
+	/* Exibição */
+	opacity: 1;
+}

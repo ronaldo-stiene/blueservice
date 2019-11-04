@@ -1,0 +1,164 @@
+/**
+ * Arquivo que contém as definições de estilo da página de dados do produto.
+ *
+ * Modifica os seguintes itens:
+ * - Exibição do produto
+ * - Informações do produto
+ * - Compra de produto
+ */
+
+/*********************************************************************************************************************/
+/**                                                     PRODUCT                                                     **/
+/*********************************************************************************************************************/
+
+/**
+ * Exibição de produto
+ * - <div>
+ */
+.product-info {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	/* Posição */
+	left: calc(85% + 1em);
+
+	/* Espaçamento */
+	margin: 1em;
+	padding: 1em;
+	padding-right: 0;
+	border: 1px solid #BBB;
+}
+
+/**
+ * Imagem do produto
+ * - <img>
+ */
+.product-image {
+	/* Disposição */
+	display: inline;
+
+	/* Posição */
+	float: left;
+
+	/* Tamanho */
+	width: 20%;
+	height: auto;
+
+	/* Espaçamento */
+	margin: 1em;
+	border: 2px solid #BBB;
+	border-radius: 10px;
+}
+
+/**
+ * Informações do produto.
+ * - <div>
+ * - <h2>
+ * - <span>
+ */
+.product-data {
+	/* Disposição */
+	flex: 2;
+	display: inline;
+
+	/* Espaçamento */
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.product-subtitle {
+	/* Espaçamento */
+	margin-top: .5em;
+	padding: .5em;
+
+	/* Fundo */
+	background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5));
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 3px 100%;
+}
+.product-name {
+	/* Texto */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.product-category {
+	/* Texto */
+	color: #888;
+    font-size: .8em;
+}
+.product-features {
+	/* Espaçamento */
+	margin: 1em;
+}
+.product-description {
+	/* Espaçamento */
+	margin-bottom: 1em;
+
+	/* Texto */
+    text-align: justify;
+}
+
+/**
+ * Compra do produto.
+ * - <form>
+ * - <span>
+ * - <input>
+ * - <button>
+ */
+.product-form {
+	/* Disposição */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	/* Tamanho */
+	width: 10em;
+
+	/* Espaçamento */
+	margin: .5em;
+	padding: .5em;
+	padding-left: 1em;
+	border-left: 1px solid #BBB;
+}
+.product-price {
+	/* Posição */
+	float: left;
+
+	/* Espaçamento */
+	margin: .5em;
+	margin-bottom: 1em;
+
+	/* Texto */
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: cursive;
+}
+.product-quantity-information {
+	/* Disposição */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	/* Espaçamento */
+	margin-bottom: .5em;
+	padding-bottom: .25em;
+	padding-left: .75em;
+	padding-right: .75em;
+}
+.product-quantity {
+	/* Tamanho */
+	width: 2.5em;
+
+	/* Espaçamento */
+	margin: 2%;
+}
+.product-form-button {
+	/* Tamanho */
+	width: 100%;
+
+	/* Espaçamento */
+	margin: .5em;
+	padding: .35em;
+}
